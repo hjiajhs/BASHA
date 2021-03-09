@@ -1092,7 +1092,7 @@ end
 
 if text == 'تحديث السورس ✟' and DevBASHAW(msg) then 
 os.execute('rm -rf BASHA.lua')
-os.execute('wget https://raw.githubusercontent.com/BASHADTEAM/BASHA/main/BASHA.lua')
+os.execute('https://raw.githubusercontent.com/BASHA-TEAM/BT/main/BASHA.lua')
 send(msg.chat_id_, msg.id_,' ✟ تم تحديث السورس \n ✟ لديك اخر اصدار لسورس باشا\n ✟ الاصدار » { 2.0v}')
 dofile('BASHA.lua')  
 end
@@ -6268,7 +6268,7 @@ send(msg.chat_id_, msg.id_, '\n ✟ تم مسح المحظورين')
 end
 if text == ("المحظورين") then
 local list = database:smembers(bot_id..'Ban:User'..msg.chat_id_)
-t = "\n ✟ قائمة محظورين الكروب \n⍆══•═══𝘽𝙏══•═══⍅\n"
+t = "\n ✟ قائمة محظورين الكروب \n⍆══•═══??𝙏══•═══⍅\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
