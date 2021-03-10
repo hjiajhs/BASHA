@@ -8896,7 +8896,7 @@ end
 
 if text == ""..(database:get(bot_id..'Name:Bot') or 'باشا').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'باشا')
-local BOYKA_Msg = {
+local BASHAA_Msg = {
 'عمغي 🥺💕.',
 'هاا شتريد كافي ☹️.',
 'مشايف بوت شني 😂.',
