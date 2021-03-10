@@ -10446,7 +10446,7 @@ local msgs = {
 }
 local chat = msg.chat_id_
 delete_msg(chat, msgs)
-end
+elseif
 if text and text:match("^كولي (.*)$") then
 local txt = {string.match(text, "^(كولي) (.*)$")}
 send(msg.chat_id_, 0, txt[2], "md")
