@@ -10446,7 +10446,7 @@ local msgs = {
 }
 local chat = msg.chat_id_
 delete_msg(chat, msgs)
-
+end
 if text and text:match("^تغير رد المطور (.*)$") and Manager(msg) then
 local Teext = text:match("^تغير رد المطور (.*)$") 
 database:set(bot_id.."Sudo:Rd"..msg.chat_id_,Teext)
