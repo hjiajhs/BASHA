@@ -10447,6 +10447,16 @@ local msgs = {
 local chat = msg.chat_id_
 delete_msg(chat, msgs)
 end
+if text and text:match("^كولي (.*)$") then
+local txt = {string.match(text, "كولي (.*)$")}
+send(msg.chat_id_, 0, txt[2], "md")
+local id = msg.id_
+local msgs = {
+[0] = id
+}
+local chat = msg.chat_id_
+delete_msg(chat, msgs)
+end
 
 if text and text:match("^تغير رد المطور (.*)$") and Manager(msg) then
 local Teext = text:match("^تغير رد المطور (.*)$") 
