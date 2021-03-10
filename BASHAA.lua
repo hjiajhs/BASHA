@@ -8896,7 +8896,7 @@ end
 
 if text == ""..(database:get(bot_id..'Name:Bot') or 'باشا').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'باشا')
-local BASHAA_Msg = {
+local BOYKA_Msg = {
 'عمغي 🥺💕.',
 'هاا شتريد كافي ☹️.',
 'مشايف بوت شني 😂.',
@@ -10446,17 +10446,6 @@ local msgs = {
 }
 local chat = msg.chat_id_
 delete_msg(chat, msgs)
-elseif
-if text and text:match("^كولي (.*)$") then
-local txt = {string.match(text, "^(كولي) (.*)$")}
-send(msg.chat_id_, 0, txt[2], "md")
-local id = msg.id_
-local msgs = {
-[0] = id
-}
-local chat = msg.chat_id_
-delete_msg(chat, msgs)
-end
 
 if text and text:match("^تغير رد المطور (.*)$") and Manager(msg) then
 local Teext = text:match("^تغير رد المطور (.*)$") 
@@ -12026,7 +12015,7 @@ database:set(bot_id.." amir:zhrf_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^زخرفه (.*)$") and database:get(bot_id.." amir:zhrf_Bots"..msg.chat_id_) == "open" then
 local TextZhrfa = text:match("^زخرفه (.*)$")
-zh = https.request('https://rudi-dev.tk/Amir1/BASHAA.php?en='..URL.escape(TextZhrfa)..'')
+zh = https.request('https://rudi-dev.tk/Amir1/Boyka.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
 t = "\n✟ قائمه الزخرفه \nٴ✟ٴ⍆══•═══𝘽𝙏══•═══⍅ٴ✟○ٴ \n"
 i = 0
@@ -12046,7 +12035,7 @@ database:set(bot_id.." amir:brj_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^برج (.*)$") and database:get(bot_id.." amir:brj_Bots"..msg.chat_id_) == "open" then
 local Textbrj = text:match("^برج (.*)$")
-gk = https.request('https://rudi-dev.tk/Amir2/BASHAA.php?br='..URL.escape(Textbrj)..'')
+gk = https.request('https://rudi-dev.tk/Amir2/Boyka.php?br='..URL.escape(Textbrj)..'')
 br = JSON.decode(gk)
 i = 0
 for k,v in pairs(br.ok) do
@@ -12069,7 +12058,7 @@ database:set(bot_id.." amir:age_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^احسب (.*)$") and database:get(bot_id.." amir:age_Bots"..msg.chat_id_) == "open" then
 local Textage = text:match("^احسب (.*)$")
-ge = https.request('https://rudi-dev.tk/Amir3/BASHAA.php?age='..URL.escape(Textage)..'')
+ge = https.request('https://rudi-dev.tk/Amir3/Boyka.php?age='..URL.escape(Textage)..'')
 ag = JSON.decode(ge)
 i = 0
 for k,v in pairs(ag.ok) do
