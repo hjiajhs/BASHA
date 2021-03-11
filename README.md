@@ -8,10 +8,10 @@ Installation
 
 التنزيل :
 بالمكاتب ✅
- ``` git clone https://github.com/BASHA-TEAM/BASHAA ;cd BASHAA;chmod +x install;./install install ```
+ ``` git clone https://github.com/BASHA-TEAM/BASHA ;cd BASHA;chmod +x install;./install install ```
 
 بدون مكاتب ✅
-``` git clone https://github.com/BASHA-TEAM/BASHAA ;cd BASHAA;chmod +x install;./install ```
+``` git clone https://github.com/BASHA-TEAM/BASHA ;cd BASHA;chmod +x install;./install ```
 __________________________________________________________________________________________________________________
 
 عند اكتمال التنزيل,
@@ -32,6 +32,6 @@ ________________________________________________________________________________
 كود الرن 
 ========
 ------
-``` ./BASHAA/BT ```
+``` ./BASHA/BT ```
 
 __________________________________________________________________________________________________________________
