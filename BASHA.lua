@@ -462,9 +462,6 @@ end
 local function sendVideo(chat_id, reply_to_message_id, disable_notification, from_background, reply_markup, video, duration, width, height, caption, cb, cmd)    
 local input_message_content = { ID = "InputMessageVideo",      video_ = getInputFile(video),      added_sticker_file_ids_ = {},      duration_ = duration or 0,      width_ = width or 0,      height_ = height or 0,      caption_ = caption    }    sendRequest('SendMessage', chat_id, reply_to_message_id, disable_notification, from_background, reply_markup, input_message_content, cb, cmd)  
 end
-local function sendVideo_note(chat_id, reply_to_message_id, disable_notification, from_background, reply_markup, video_note, duration, width, height, caption, cb, cmd)    
-local input_message_content = { ID = "InputMessageVideo_note",      video_note_ = getInputFile(video_note),      added_sticker_file_ids_ = {},      duration_ = duration or 0,      width_ = width or 0,      height_ = height or 0,      caption_ = caption    }    sendRequest('SendMessage', chat_id, reply_to_message_id, disable_notification, from_background, reply_markup, input_message_content, cb, cmd)  
-end
 function sendDocument(chat_id, reply_to_message_id, disable_notification, from_background, reply_markup, document, caption, dl_cb, cmd) 
 tdcli_function ({ID = "SendMessage",chat_id_ = chat_id,reply_to_message_id_ = reply_to_message_id,disable_notification_ = disable_notification,from_background_ = from_background,reply_markup_ = reply_markup,input_message_content_ = {ID = "InputMessageDocument",document_ = getInputFile(document),caption_ = caption},}, dl_cb, cmd) 
 end
@@ -860,7 +857,7 @@ database:del(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id
 return false
 end
 --------------------------------------------------------------------------------------------------------------
-if (msg.content_.animation_) or (msg.content_.video_note_) or (msg.content_.photo_) or (msg.content_.video_) or (msg.content_.document) or (msg.content_.voice_) or (msg.content_.audio_) or (msg.content_.sticker_) and msg.reply_to_message_id_ == 0 then
+if (msg.content_.animation_) or (msg.content_.photo_) or (msg.content_.video_) or (msg.content_.document) or (msg.content_.voice_) or (msg.content_.audio_) or (msg.content_.sticker_) and msg.reply_to_message_id_ == 0 then
 database:sadd(bot_id.."S666F:MN:TF"..msg.chat_id_, msg.id_)
 end
 if text == ("امسح") and cleaner(msg) then  
@@ -6275,7 +6272,7 @@ send(msg.chat_id_, msg.id_, ' ✟ تم تنزيل جميع طليان بالكر
 end
 if text == ("تاك للطليان") and Mod(msg) then
 local list = database:smembers(bot_id..'Tele:User'..msg.chat_id_)
-t = "\n ✟ قائمة الطليان الكروب \n⍆══•═══??𝙏══•═══⍅\n"
+t = "\n ✟ قائمة الطليان الكروب \n⍆══•═══𝘽𝙏══•═══⍅\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
