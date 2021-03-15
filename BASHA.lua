@@ -232,7 +232,7 @@ end
 end
 function cleaner(msg)
 local hash = database:sismember(bot_id.."S666F:MN:TF"..msg.chat_id_,msg.sender_user_id_)    
-if hash or SudoBot(msg) or DevKNTAAKEW(msg) or Sudo(msg) or BasicConstructor(msg) or CoSu(msg) or Bot(msg)  then       
+if hash or SudoBot(msg) or DevBASHAW(msg) or Sudo(msg) or BasicConstructor(msg) or CoSu(msg) or Bot(msg)  then       
 return true    
 else    
 return false    
@@ -5238,7 +5238,7 @@ return false
 end
 database:sadd(bot_id..'S666F:MN:TF'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ✟ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'KNTAAKE')..')'
+usertext = '\n ✟ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BASHA')..')'
 status  = '\n ✟ تم ترقيته منظف'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -5268,7 +5268,7 @@ send(msg.chat_id_,msg.id_," ✟ عذرا عزيزي المستخدم هاذا م
 return false 
 end      
 database:sadd(bot_id..'S666F:MN:TF'..msg.chat_id_, result.id_)
-usertext = '\n ✟ العضو » ['..result.title_..'](t.me/'..(username or 'KNTAAKE')..')'
+usertext = '\n ✟ العضو » ['..result.title_..'](t.me/'..(username or 'BASHA')..')'
 status  = '\n ✟ تم ترقيته منظف'
 texts = usertext..status
 else
@@ -5297,7 +5297,7 @@ end
 database:sadd(bot_id..'S666F:MN:TF'..msg.chat_id_, userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
-usertext = '\n ✟ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'KNTAAKE')..')'
+usertext = '\n ✟ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BASHA')..')'
 status  = '\n ✟ تم ترقيته منظف'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
@@ -5320,7 +5320,7 @@ end
 function start_function(extra, result, success)
 database:srem(bot_id..'S666F:MN:TF'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
-usertext = '\n ✟ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'KNTAAKE')..')'
+usertext = '\n ✟ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BASHA')..')'
 status  = '\n ✟ تم تنزيله من المنظفيه'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
@@ -5342,7 +5342,7 @@ end
 function start_function(extra, result, success)
 if result.id_ then
 database:srem(bot_id..'S666F:MN:TF'..msg.chat_id_, result.id_)
-usertext = '\n ✟ العضو » ['..result.title_..'](t.me/'..(username or 'KNTAAKE')..')'
+usertext = '\n ✟ العضو » ['..result.title_..'](t.me/'..(username or 'BASHA')..')'
 status  = '\n ✟ تم تنزيله من المنظفيه'
 texts = usertext..status
 else
@@ -5367,7 +5367,7 @@ end
 database:srem(bot_id..'S666F:MN:TF'..msg.chat_id_, userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
-usertext = '\n ✟ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'KNTAAKE')..')'
+usertext = '\n ✟ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BASHA')..')'
 status  = '\n ✟ تم تنزيله من المنظفيه'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
