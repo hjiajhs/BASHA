@@ -861,17 +861,17 @@ if (msg.content_.animation_) or (msg.content_.photo_) or (msg.content_.video_) o
 database:sadd(bot_id.."S666F:MN:TF"..msg.chat_id_, msg.id_)
 end
 if text == ("امسح") and cleaner(msg) then  
-local list = database:smembers(bot_id.."VV59VV:MN:TF"..msg.chat_id_)
+local list = database:smembers(bot_id.."S666F:MN:TF"..msg.chat_id_)
 for k,v in pairs(list) do
 local Message = v
 if Message then
-t = "⌁︙ تم مسح "..k.." من الوسائط الموجوده"
+t = "✟ تم مسح "..k.." من الوسائط الموجوده"
 DeleteMessage(msg.chat_id_,{[0]=Message})
-database:del(bot_id.."VV59VV:MN:TF"..msg.chat_id_)
+database:del(bot_id.."S666F:MN:TF"..msg.chat_id_)
 end
 end
 if #list == 0 then
-t = "⌁︙ لا يوجد ميديا في المجموعه"
+t = "✟ لا يوجد ميديا في المجموعه"
 end
 send(msg.chat_id_, msg.id_, t)
 end
