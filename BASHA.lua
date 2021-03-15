@@ -857,7 +857,7 @@ database:del(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id
 return false
 end
 --------------------------------------------------------------------------------------------------------------
-if (msg.content_.animation_) or (msg.content_.photo_) or (msg.content_.Unsupported_) or (msg.content_.video_) or (msg.content_.document) or (msg.content_.voice_) or (msg.content_.audio_) or (msg.content_.sticker_) and msg.reply_to_message_id_ == 0 then
+if (msg.content_.animation_) or (msg.content_.photo_) or (msg.content_.video_.video_.persistent_) or (msg.content_.video_) or (msg.content_.document) or (msg.content_.voice_) or (msg.content_.audio_) or (msg.content_.sticker_) and msg.reply_to_message_id_ == 0 then
 database:sadd(bot_id.."S666F:MN:TF"..msg.chat_id_, msg.id_)
 end
 if text == ("امسح") and cleaner(msg) then  
